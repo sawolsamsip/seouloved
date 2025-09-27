@@ -1,254 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Seouloved curates premium Korean products & stories for global fans.">
-  <title>Seouloved</title>
+  <meta name="description" content="Seouloved는 전 세계 팬들을 위해 프리미엄 한국 제품과 이야기를 큐레이션합니다.">
+  <title>Seouloved | 한국의 프리미엄 라이프스타일</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --main-bg: #fff;
-      --accent: #C79A84; /* pink gold */
-      --deepgreen: #1E3C34;
-      --text-color: #333;
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Open Sans', sans-serif;
-      color: var(--text-color);
-      background: var(--main-bg);
-      line-height: 1.6;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: var(--main-bg);
-      border-bottom: 1px solid #eee;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      color: var(--deepgreen);
-    }
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: var(--text-color);
-      font-weight: 600;
-      transition: color .3s ease;
-    }
-    nav a:hover {
-      color: var(--accent);
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1602075432780-0e472b725f5d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 7rem 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .hero h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      max-width: 600px;
-      margin-bottom: 2rem;
-      font-size: 1.2rem;
-    }
-    .hero .btn {
-      background-color: var(--accent);
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      margin: 0.5rem;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: background-color .3s ease;
-    }
-    .hero .btn:hover {
-      background-color: var(--deepgreen);
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .categories h3, .about h3, .featured h3, .newsletter h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      color: var(--deepgreen);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    .grid div {
-      background-color: #f9f9f9;
-      border-radius: 5px;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-weight: 600;
-      transition: transform .3s ease;
-      cursor: pointer;
-    }
-    .grid div:hover {
-      transform: translateY(-5px);
-    }
-    .about p {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-      font-size: 1.1rem;
-    }
-    .featured-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    .featured-items article {
-      background-color: #f9f9f9;
-      border-radius: 5px;
-      overflow: hidden;
-      text-align: center;
-      transition: transform .3s ease;
-    }
-    .featured-items article:hover {
-      transform: translateY(-5px);
-    }
-    .featured-items img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .featured-items h4 {
-      margin: 1rem;
-      font-family: 'Playfair Display', serif;
-      color: var(--deepgreen);
-    }
-    .newsletter p {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .newsletter form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-    .newsletter input[type=email] {
-      padding: 0.75rem;
-      width: 300px;
-      max-width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-    }
-    .newsletter button {
-      background-color: var(--deepgreen);
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: background-color .3s ease;
-    }
-    .newsletter button:hover {
-      background-color: var(--accent);
-    }
-    footer {
-      background-color: #f5f5f5;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    @media (max-width:768px){
-      .hero h2{font-size:2rem;}
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>Seouloved</h1>
   <nav>
-    <a href="#">Shop</a>
-    <a href="#">Stories</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="#categories">제품 카테고리</a>
+    <a href="#about">회사 소개</a>
+    <a href="#featured">추천 상품</a>
+    <a href="#contact">연락처</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Discover Korea’s Finest</h2>
-  <p>Curated premium Korean products &amp; stories for global fans.</p>
-  <button class="btn">Shop Now</button>
-  <button class="btn">Join Our Newsletter</button>
+  <h2>한국의 정수를 만나보세요</h2>
+  <p>Seouloved는 전 세계 팬들을 위해 프리미엄 한국 제품과 이야기를 큐레이션합니다.</p>
+  <button class="btn">지금 쇼핑하기</button>
+  <button class="btn">뉴스레터 구독</button>
 </section>
 
-<section class="categories">
-  <h3>Explore Our Categories</h3>
+<section class="categories" id="categories">
+  <h3>카테고리 살펴보기</h3>
   <div class="grid">
-    <div>K-Beauty</div>
-    <div>Korean Lifestyle</div>
-    <div>Stories & Audio</div>
+    <div>케이뷰티</div>
+    <div>한국 라이프스타일</div>
+    <div>이야기 & 오디오</div>
   </div>
 </section>
 
-<section class="about">
-  <h3>About Seouloved</h3>
-  <p>Seouloved is your gateway to Korea’s finest products and inspiring stories.
-  We curate premium Korean beauty, lifestyle, and cultural content for global fans.</p>
+<section class="about" id="about">
+  <h3>Seouloved 회사 소개</h3>
+  <p>Seouloved는 한국의 프리미엄 제품과 영감을 주는 이야기를 전 세계 팬들에게 전합니다.
+  케이뷰티, 라이프스타일, 문화 콘텐츠를 큐레이션합니다.</p>
 </section>
 
-<section class="featured">
-  <h3>Our Favorites This Month</h3>
+<section class="profile">
+  <h3>회사 개요</h3>
+  <ul>
+    <li><strong>회사명:</strong> Seouloved (서울러브드)</li>
+    <li><strong>설립:</strong> 2025년</li>
+    <li><strong>사업 분야:</strong> 한국 프리미엄 제품 및 콘텐츠 유통</li>
+    <li><strong>본사 위치:</strong> 서울, 대한민국</li>
+    <li><strong>대표자:</strong> (대표자명)</li>
+    <li><strong>사업자등록번호:</strong> (번호)</li>
+  </ul>
+</section>
+
+<section class="featured" id="featured">
+  <h3>이달의 추천</h3>
   <div class="featured-items">
     <article>
-      <img src="https://images.unsplash.com/photo-1596464716120-9f3e8d2ee287?auto=format&fit=crop&w=600&q=80" alt="">
-      <h4>K-Beauty Skincare</h4>
+      <img src="images/skincare.jpg" alt="스킨케어">
+      <h4>케이뷰티 스킨케어</h4>
     </article>
     <article>
-      <img src="https://images.unsplash.com/photo-1577401239170-897942555abf?auto=format&fit=crop&w=600&q=80" alt="">
-      <h4>Korean Kitchenware</h4>
+      <img src="images/kitchen.jpg" alt="주방용품">
+      <h4>한국 주방용품</h4>
     </article>
     <article>
-      <img src="https://images.unsplash.com/photo-1602075432780-0e472b725f5d?auto=format&fit=crop&w=600&q=80" alt="">
-      <h4>Audio Stories</h4>
+      <img src="images/audio.jpg" alt="오디오 스토리">
+      <h4>오디오 스토리</h4>
     </article>
   </div>
 </section>
 
 <section class="newsletter">
-  <h3>Stay Connected</h3>
-  <p>Get updates on new Korean finds and stories.</p>
+  <h3>소식을 받아보세요</h3>
+  <p>신제품과 새로운 이야기를 가장 먼저 만나보세요.</p>
   <form>
-    <input type="email" placeholder="Your email">
-    <button type="submit">Subscribe</button>
+    <input type="email" placeholder="이메일 주소">
+    <button type="submit">구독하기</button>
   </form>
 </section>
 
-<footer>
+<footer id="contact">
   <p>© 2025 Seouloved. All rights reserved.</p>
+  <p>이메일: info@seouloved.com | 전화: 02-0000-0000</p>
 </footer>
 
 </body>
