@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Seouloved - 한국 프리미엄 제품과 디지털 콘텐츠를 전세계에 전하는 브랜드">
-  <title>Seouloved | 서울러브드</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seouloved | 당신의 일상을 위한 감도 높은 제안</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">Seouloved</div>
-    <nav>
-      <ul>
-        <li><a href="#about">소개</a></li>
-        <li><a href="#products">제품 & 콘텐츠</a></li>
-        <li><a href="#featured">추천</a></li>
-        <li><a href="#contact">문의</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">Seouloved</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#finds">Finds</a></li>
+                    <li><a href="#stories">Stories</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>한국의 특별함을 전세계에</h1>
-      <p>Seouloved는 한국의 프리미엄 제품과 디지털 콘텐츠를 전세계 팬들에게 소개합니다.</p>
-      <a href="#contact" class="btn">문의하기</a>
-    </div>
-  </section>
+    <main>
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-text">
+                    <h1>당신의 일상을 위한<br>감도 높은 제안</h1>
+                    <p>우리는 매일의 순간들이 모여 삶이 된다고 믿습니다.<br>Seouloved는 세심하게 고른 사물과 깊이 있는 이야기를 통해<br>그 순간들을 더욱 풍요롭게 만듭니다.</p>
+                </div>
+            </div>
+        </section>
 
-  <section id="about" class="about">
-    <h2>Seouloved 소개</h2>
-    <p>서울러브드는 한국의 아름다움과 가치를 담은 프리미엄 제품과 스토리를 전세계 고객에게 제공합니다. 
-    케이뷰티, 라이프스타일 상품과 오디오북, 출판 콘텐츠 등 다양한 영역을 큐레이션합니다.</p>
-  </section>
+        <section class="content-grid">
+            <div class="container">
+                <div class="grid-item large" id="finds">
+                    <img src="https://images.unsplash.com/photo-1579852927361-53b9a5210db2?w=800" alt="감도 높은 제품">
+                    <div class="item-caption">
+                        <h3>Seouloved Finds</h3>
+                        <p>일상에 아름다움을 더하는 사물들.</p>
+                        <a href="#">자세히 보기 &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid-item" id="stories">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800" alt="책과 이야기">
+                     <div class="item-caption">
+                        <h3>Seouloved Stories</h3>
+                        <p>삶의 영감을 주는 이야기.</p>
+                        <a href="#">자세히 보기 &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid-item text-block" id="about">
+                    <h2>우리의 생각</h2>
+                    <p>Seouloved는 한국의 창의성과 장인 정신을 존중합니다. 단순히 물건을 파는 것을 넘어, 그것에 담긴 이야기와 철학을 전달하고자 합니다. 당신의 삶에 오래도록 머무를 가치를 제안합니다.</p>
+                </div>
+                 <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1620706857373-21b801a53c90?w=800" alt="새로운 아이템">
+                     <div class="item-caption">
+                        <h3>This Month's Pick</h3>
+                        <p>가장 한국적인 맛을 지키는 지혜.</p>
+                        <a href="#">자세히 보기 &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <section id="products" class="products">
-    <h2>제품 & 콘텐츠</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1600180758895-64e7f07aa6f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="한국 제품">
-        <h3>한국 제품</h3>
-        <p>케이뷰티, 주방용품 등 프리미엄 한국 상품</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1584697964180-4d06b85d235e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="디지털 콘텐츠">
-        <h3>디지털 콘텐츠</h3>
-        <p>오디오북, 출판 등 디지털 콘텐츠</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="featured" class="featured">
-    <h2>추천</h2>
-    <div class="featured-item">
-      <img src="https://images.unsplash.com/photo-1611078485721-5d87e9cfb5db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="추천 제품">
-      <h3>예시 제품</h3>
-      <p>간단한 설명문을 넣어두세요.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>문의하기</h2>
-    <p>제품 및 협업 문의는 아래 이메일로 연락 주세요.</p>
-    <a href="mailto:info@seouloved.com" class="btn">메일 보내기</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Seouloved. All rights reserved.</p>
-  </footer>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Seouloved. All Rights Reserved.</p>
+            <p>사업자 등록 번호: [번호 입력] | 대표: [이름 입력]</p>
+        </div>
+    </footer>
 </body>
 </html>
