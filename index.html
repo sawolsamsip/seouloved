@@ -4,184 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seouloved | 당신의 일상을 위한 감도 높은 제안</title>
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #2c2c2c; 
-            --secondary-color: #6d6d6d; 
-            --bg-color: #ffffff;
-            --light-gray-bg: #f7f7f7;
-            --border-color: #e5e5e5;
-            --heading-font: 'Noto Serif KR', serif;
-            --body-font: 'Noto Sans KR', sans-serif;
-        }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: var(--body-font);
-            background-color: var(--bg-color);
-            color: var(--primary-color);
-            line-height: 1.7;
-            font-size: 16px;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Header */
-        .main-header {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border-color);
-            padding: 1.5rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .main-header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-family: var(--heading-font);
-            font-weight: 600;
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-        .main-nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            gap: 2.5rem;
-        }
-        .main-nav a {
-            text-decoration: none;
-            color: var(--secondary-color);
-            font-weight: 500;
-            font-size: 1rem;
-            transition: color 0.3s ease;
-        }
-        .main-nav a:hover {
-            color: var(--primary-color);
-        }
-
-        /* Intro Section */
-        .intro-section {
-            padding: 6rem 0;
-            text-align: center;
-        }
-        .intro-text h1 {
-            font-family: var(--heading-font);
-            font-size: 3rem;
-            font-weight: 600;
-            margin: 0 0 1.5rem 0;
-            line-height: 1.4;
-        }
-        .intro-text p {
-            font-size: 1.1rem;
-            color: var(--secondary-color);
-            max-width: 550px;
-            margin: 0 auto;
-        }
-
-        /* Content Grid Section */
-        .content-grid .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: 450px;
-            gap: 2rem;
-        }
-        .grid-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .grid-item.large {
-            grid-row: span 2;
-            height: 932px; /* (450 * 2) + 32px gap */
-        }
-        .grid-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-        }
-        .grid-item:hover img {
-            transform: scale(1.05);
-        }
-        .item-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 2rem;
-            color: #fff;
-            z-index: 2;
-            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
-        }
-        .item-caption h3 {
-            font-family: var(--heading-font);
-            font-size: 1.8rem;
-            margin: 0 0 0.5rem 0;
-        }
-        .item-caption p {
-            margin: 0 0 1rem 0;
-            opacity: 0.9;
-        }
-        .item-caption a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 700;
-        }
-        .grid-item.text-block {
-            background-color: var(--light-gray-bg);
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .grid-item.text-block h2 {
-            font-family: var(--heading-font);
-            font-size: 2rem;
-            margin: 0 0 1rem 0;
-        }
-
-        /* Footer */
-        .main-footer {
-            background: var(--light-gray-bg);
-            color: var(--secondary-color);
-            text-align: center;
-            padding: 3rem 0;
-            margin-top: 5rem;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .content-grid .container {
-                grid-template-columns: 1fr;
-                grid-auto-rows: 400px;
-            }
-            .grid-item.large {
-                grid-row: auto;
-                height: 400px;
-            }
-            .intro-text h1 {
-                font-size: 2.2rem;
-            }
-        }
-    </style>
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data: https://images.unsplash.com;">
 </head>
 <body>
     <header class="main-header">
@@ -230,7 +58,7 @@
                     <p>Seouloved는 한국의 창의성과 장인 정신을 존중합니다. 단순히 물건을 파는 것을 넘어, 그것에 담긴 이야기와 철학을 전달하고자 합니다. 당신의 삶에 오래도록 머무를 가치를 제안합니다.</p>
                 </div>
                  <div class="grid-item">
-                    <img src="https://images.unsplash.com/photo-1620706857373-21b801a53c90?w=800" alt="새로운 아이템">
+                    <img src="https://images.unsplash.com/photo-1616499313432-843818e69335?w=800" alt="새로운 아이템">
                      <div class="item-caption">
                         <h3>This Month's Pick</h3>
                         <p>가장 한국적인 맛을 지키는 지혜.</p>
