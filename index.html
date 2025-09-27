@@ -3,88 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Seouloved는 전 세계 팬들을 위해 프리미엄 한국 제품과 이야기를 큐레이션합니다.">
-  <title>Seouloved | 한국의 프리미엄 라이프스타일</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Seouloved - 한국 프리미엄 제품과 디지털 콘텐츠를 전세계에 전하는 브랜드">
+  <title>Seouloved | 서울러브드</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <div class="logo">Seouloved</div>
+    <nav>
+      <ul>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#products">제품 & 콘텐츠</a></li>
+        <li><a href="#featured">추천</a></li>
+        <li><a href="#contact">문의</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <h1>Seouloved</h1>
-  <nav>
-    <a href="#categories">제품 카테고리</a>
-    <a href="#about">회사 소개</a>
-    <a href="#featured">추천 상품</a>
-    <a href="#contact">연락처</a>
-  </nav>
-</header>
+  <section class="hero">
+    <h1>한국의 특별함을 전세계에</h1>
+    <p>Seouloved는 한국의 프리미엄 제품과 디지털 콘텐츠를 전세계 팬들에게 소개합니다.</p>
+    <a href="#contact" class="btn">문의하기</a>
+  </section>
 
-<section class="hero">
-  <h2>한국의 정수를 만나보세요</h2>
-  <p>Seouloved는 전 세계 팬들을 위해 프리미엄 한국 제품과 이야기를 큐레이션합니다.</p>
-  <button class="btn">지금 쇼핑하기</button>
-  <button class="btn">뉴스레터 구독</button>
-</section>
+  <section id="about" class="about">
+    <h2>Seouloved 소개</h2>
+    <p>서울러브드는 한국의 아름다움과 가치를 담은 프리미엄 제품과 스토리를 전세계 고객에게 제공합니다. 
+    케이뷰티, 라이프스타일 상품과 오디오북, 출판 콘텐츠 등 다양한 영역을 큐레이션합니다.</p>
+  </section>
 
-<section class="categories" id="categories">
-  <h3>카테고리 살펴보기</h3>
-  <div class="grid">
-    <div>케이뷰티</div>
-    <div>한국 라이프스타일</div>
-    <div>이야기 & 오디오</div>
-  </div>
-</section>
+  <section id="products" class="products">
+    <h2>제품 & 콘텐츠</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600180758895-64e7f07aa6f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzODV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTU1MzE0NTQ&ixlib=rb-4.0.3&q=80&w=400" alt="케이뷰티">
+        <h3>한국 제품</h3>
+        <p>케이뷰티, 주방용품 등 프리미엄 한국 상품</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1584697964180-4d06b85d235e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzODV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTU1MzE0NzE&ixlib=rb-4.0.3&q=80&w=400" alt="디지털 콘텐츠">
+        <h3>디지털 콘텐츠</h3>
+        <p>오디오북, 출판 등 디지털 콘텐츠</p>
+      </div>
+    </div>
+  </section>
 
-<section class="about" id="about">
-  <h3>Seouloved 회사 소개</h3>
-  <p>Seouloved는 한국의 프리미엄 제품과 영감을 주는 이야기를 전 세계 팬들에게 전합니다.
-  케이뷰티, 라이프스타일, 문화 콘텐츠를 큐레이션합니다.</p>
-</section>
+  <section id="featured" class="featured">
+    <h2>추천</h2>
+    <div class="featured-item">
+      <img src="https://images.unsplash.com/photo-1611078485721-5d87e9cfb5db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="추천 제품 이미지">
+      <h3>예시 제품</h3>
+      <p>간단한 설명문을 넣어두세요.</p>
+    </div>
+  </section>
 
-<section class="profile">
-  <h3>회사 개요</h3>
-  <ul>
-    <li><strong>회사명:</strong> Seouloved (서울러브드)</li>
-    <li><strong>설립:</strong> 2025년</li>
-    <li><strong>사업 분야:</strong> 한국 프리미엄 제품 및 콘텐츠 유통</li>
-    <li><strong>본사 위치:</strong> 서울, 대한민국</li>
-    <li><strong>대표자:</strong> (대표자명)</li>
-    <li><strong>사업자등록번호:</strong> (번호)</li>
-  </ul>
-</section>
+  <section id="contact" class="contact">
+    <h2>문의하기</h2>
+    <p>제품 및 협업 문의는 아래 이메일로 연락 주세요.</p>
+    <p><a href="mailto:info@seouloved.com">info@seouloved.com</a></p>
+  </section>
 
-<section class="featured" id="featured">
-  <h3>이달의 추천</h3>
-  <div class="featured-items">
-    <article>
-      <img src="images/skincare.jpg" alt="스킨케어">
-      <h4>케이뷰티 스킨케어</h4>
-    </article>
-    <article>
-      <img src="images/kitchen.jpg" alt="주방용품">
-      <h4>한국 주방용품</h4>
-    </article>
-    <article>
-      <img src="images/audio.jpg" alt="오디오 스토리">
-      <h4>오디오 스토리</h4>
-    </article>
-  </div>
-</section>
-
-<section class="newsletter">
-  <h3>소식을 받아보세요</h3>
-  <p>신제품과 새로운 이야기를 가장 먼저 만나보세요.</p>
-  <form>
-    <input type="email" placeholder="이메일 주소">
-    <button type="submit">구독하기</button>
-  </form>
-</section>
-
-<footer id="contact">
-  <p>© 2025 Seouloved. All rights reserved.</p>
-  <p>이메일: info@seouloved.com | 전화: 02-0000-0000</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Seouloved. All rights reserved.</p>
+  </footer>
 </body>
 </html>
