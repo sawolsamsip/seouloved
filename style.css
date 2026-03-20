@@ -101,6 +101,11 @@ body, html {
     grid-row: span 2;
     height: 932px; /* (450 * 2) + 32px gap */
 }
+.grid-item picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .grid-item img {
     width: 100%;
     height: 100%;

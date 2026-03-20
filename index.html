@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data: https://images.unsplash.com;">
+    <meta name="description" content="Seouloved — 한국의 창의성과 장인 정신을 담은 감도 높은 사물과 이야기를 제안합니다.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; img-src 'self' data: https://images.unsplash.com;">
 </head>
 <body>
     <header class="main-header">
@@ -37,7 +38,10 @@
         <section class="content-grid">
             <div class="container">
                 <div class="grid-item large" id="finds">
-                    <img src="left.png" alt="감도 높은 제품">
+                    <picture>
+                        <source srcset="left.webp" type="image/webp">
+                        <img src="left.png" alt="감도 높은 제품">
+                    </picture>
                     <div class="item-caption">
                         <h3>Seouloved Finds</h3>
                         <p>일상에 아름다움을 더하는 사물들.</p>
@@ -45,7 +49,10 @@
                     </div>
                 </div>
                 <div class="grid-item" id="stories">
-                    <img src="right2.png" alt="책과 이야기">
+                    <picture>
+                        <source srcset="right2.webp" type="image/webp">
+                        <img src="right2.png" alt="책과 이야기" loading="lazy">
+                    </picture>
                      <div class="item-caption">
                         <h3>Seouloved Stories</h3>
                         <p>삶의 영감을 주는 이야기.</p>
